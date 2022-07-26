@@ -1,0 +1,42 @@
+.wrapper-lang {
+    position: fixed;
+    // margin: 20px 0 0 20px;
+    z-index: 1000;
+    font-family: "Roboto", sans-serif;
+    bottom: 0;
+    right: 0;
+    background-color: $base-black;
+    // margin: 15px;
+    padding: 15px;
+    cursor: pointer;
+
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    //! Если добавляютсяч новые языки, менять цифру на последний параграф,
+    //! в HTML убирать класс с предпоследнего элемента этот же класс добавлять в последний
+    p:nth-child(1) {
+        margin: 0;
+    }
+
+    #select-lang {
+        position: relative;
+
+        a {
+            text-decoration: none;
+            padding: 0 0 0 36px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+
+            img {
+                position: absolute;
+                left: 0;
+                width: 20%;
+            }
+        }
+    }
+}

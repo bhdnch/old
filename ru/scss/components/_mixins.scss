@@ -1,0 +1,8 @@
+@mixin home_block-title {
+   margin-top: 5px;
+   font-family: 'Playfair Display', serif;
+   font-size: 42px;
+   font-weight: bold;
+   text-align: center;
+   color: $base-color;
+}

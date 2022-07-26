@@ -1,0 +1,27 @@
+.fill-form {
+   text-align: center;
+   padding: 40px 0px;
+
+   a {
+      padding: 15px 30px;
+      font-size: 50px;
+      color: #fff;
+      background-color: $base-color;
+      text-decoration: none;
+
+      @media screen and (max-width: 490px) {
+         font-size: 44px;
+         padding: 7.5px 15px;
+      }
+
+      @media screen and (max-width: 411px) {
+         font-size: 38px;
+         padding: 5px 10px;
+      }
+
+      @media screen and (max-width: 352px) {
+         font-size: 34px;
+         padding: 4px 8px;
+      }
+   }
+}

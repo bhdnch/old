@@ -1,0 +1,34 @@
+.checked-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-color: $base-black;
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 42px;
+        font-weight: bold;
+        text-align: center;
+        color: $base-color;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        color: #fefefe;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+        span {
+            color: $base-color;
+        }
+    }
+}

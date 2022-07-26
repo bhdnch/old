@@ -1,0 +1,59 @@
+.home-events {
+   min-height: 800px;
+   background-color: #fff;
+
+   &__title {
+      @include home_block-title;
+   }
+
+   &__subtitle {
+      padding-top: 120px;
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      color: $base-black;
+   }
+
+   .nav-tabs {
+      font-family: "Roboto", sans-serif;
+      margin-top: 50px;
+
+      .nav-item {
+         .nav-link {
+            color: $base-black;
+            border-top-left-radius: 1px solid $base-black;
+            border-top-right-radius: 1px solid $base-black;
+         }
+      }
+   }
+
+   .tab-content {
+      font-family: "Roboto", sans-serif;
+
+      .tab-pane {
+         display: flex;
+         // justify-content: space-evenly;
+         flex-wrap: wrap;
+         flex: 2 1 auto;
+
+         .card {
+            margin-top: 20px;
+            margin-right: 30px;
+
+            .card-body {
+               .btn {
+                  background: $base-color;
+                  color: #fff;
+                  border: none;
+               }
+
+               .modal {
+                  .btn-close:focus {
+                     box-shadow: none;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,42 @@
+// .container {
+//     max-width: 1170px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+// }
+html,
+body {
+   overflow-x: hidden;
+   max-width: 100%;
+}
+
+.overflow--hidden {
+   overflow: hidden !important;
+}
+
+svg.logo-svg {
+   width: calc(612px / 9);
+   height: calc(792px / 9);
+}
+
+.hidden {
+   display: none !important;
+}
+
+.select-lang-title--margin {
+   margin-bottom: 10px !important;
+}
+
+.btn-wrapper {
+   text-align: center;
+   padding-bottom: 40px;
+
+   button {
+      font-family: 'Roboto', sans-serif;
+      border: none;
+      background-color: $base-color;
+      width: 175px;
+      height: 65px;
+      color: #fff;
+      font-size: 20px;
+   }
+}

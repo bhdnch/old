@@ -1,0 +1,116 @@
+.footer {
+    background-color: $base-black;
+    min-height: 500px;
+
+    .footer__wrapper {
+        padding-top: 150px;
+
+        @media only screen and (max-width: 1200px) {
+            padding-top: 100px;
+        }
+
+        .footer__column {
+            position: relative;
+
+            .footer__logo {
+                position: absolute;
+                text-align: center;
+                bottom: 125px + 40px;
+                left: 0;
+                right: 0;
+
+                @media only screen and (max-width: 1200px) {
+                    bottom: 75px + 40px;
+                }
+
+                @media only screen and (max-width: 852px) {
+                    bottom: 100px + 40px;
+                }
+
+                @media only screen and (max-width: 473px) {
+                    bottom: 125px + 40px;
+                }
+
+                @media only screen and (max-width: 325px) {
+                    bottom: 150px + 40px;
+                }
+            }
+
+            .footer__title {
+                font-family: "Playfair Display", serif;
+                font-size: 28px;
+                font-weight: bold;
+                letter-spacing: -0.84px;
+                text-align: center;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            .footer__content {
+                margin-bottom: 40px;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 1.63;
+                text-align: center;
+                color: $base-gray;
+
+                a {
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 1.63;
+                    text-align: center;
+                    color: $base-gray;
+                    font-weight: 700;
+                }
+
+                .footer__contacts {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        margin-bottom: 12px;
+
+                        span {
+                            font-weight: 700;
+                        }
+
+                        i {
+                            color: $base-color;
+                            margin-right: 12px;
+                        }
+
+                        text-decoration: none;
+                        font-weight: 300;
+                    }
+                }
+
+                #dailyVersesWrapper {
+                    .bibleVerse {
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .footer__socials {
+                font-size: 36px;
+                margin-bottom: 35px;
+
+                a {
+                    color: $base-gray;
+                    text-decoration: none;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    min-height: 120px;
+    background-color: #fff;
+    color: #323232;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Victory</title>
+        <link rel="shortcut icon" href="ru/img/logo.svg" type="image/x-icon" />
+    </head>
+
+    <body>
+        <script>
+            let uri = window.location;
+            let lang = window.navigator.language;
+
+            let uriHost = uri.host;
+            let uriPath = uri.pathname;
+            if (lang == "ru-RU") {
+                location = `/victory-dev/ru`;
+            } else if (lang == "de") {
+                location = `/victory-dev/de`;
+            }
+        </script>
+    </body>
+</html>

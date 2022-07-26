@@ -1,0 +1,48 @@
+//* Normalize
+@import "components/normalize";
+//* Bootstrap
+@import "components/libs/bootstrap";
+//* Swiper bundle
+@import "components/libs/swiper-bundle";
+//* AOS
+@import "components/libs/aos";
+//* Variables
+@import "components/variables";
+//* Fonts
+@import "components/fonts";
+//* Scroll bar
+@import "components/scroll-bar";
+//* Mixins
+@import "components/mixins";
+
+//* Base classes
+@import "components/services";
+
+//* Change language
+@import "components/change-lang";
+
+//* Main
+@import "components/index/events";
+@import "components/index/header";
+@import "components/index/gallery";
+
+//* Global blocks
+@import "components/checked";
+@import "components/header";
+@import "components/footer";
+
+//* Page : About Us
+@import "components/about/cards";
+
+//* Page : Sermons
+@import "components/sermons/sermon";
+
+//* Page : Blog
+@import "components/blog/slider";
+@import "components/blog/post";
+
+//* Page : Gallery
+@import "components/gallery/gallery";
+
+//* Page : Contact
+@import "components/contacts/form";
