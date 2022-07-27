@@ -1,6 +1,11 @@
-let page = document.querySelector(".sermons-main-page");
+let page = document.querySelector(".moreWrapper");
+let host = window.location.host;
+//* Develop
+// let fetchPath = "http://" + host + "/general/js/scripts/sermons/sermons-data/pg-main-data.json";
+//* Github
+let fetchPath = "http://" + host + "/victory/general/js/scripts/sermons/sermons-data/pg-main-data.json";
 
-fetch("http://127.0.0.1:5500/general/js/scripts/sermons/sermons-data/pg-main-data.json")
+fetch(fetchPath)
    .then((response) => {
       return response.json();
    })
@@ -10,12 +15,13 @@ fetch("http://127.0.0.1:5500/general/js/scripts/sermons/sermons-data/pg-main-dat
             <div class="sermon__embedded">
                <iframe loading="lazy" width="560" height="315" src="${item.link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <!-- <hr> -->
          `;
 
          let sermonDiv = document.createElement("div");
          sermonDiv.innerHTML = video;
 
-         sermonDiv.classList.add("sermon", "content");
+         sermonDiv.classList.add("sermon", "moreItem");
          page.prepend(sermonDiv);
 
          let title = document.createElement("div");
@@ -29,4 +35,15 @@ fetch("http://127.0.0.1:5500/general/js/scripts/sermons/sermons-data/pg-main-dat
          sermonDiv.prepend(descr);
          sermonDiv.prepend(title);
       }
+
+      $(document).ready(function () {
+         $(".moreItem").slice(0, 1).show();
+         $("#loadMore").on("click", function (e) {
+            e.preventDefault();
+            $(".moreItem:hidden").slice(0, 1).slideDown();
+            if ($(".moreItem:hidden").length == 0) {
+               $("#loadMore").addClass("hidden");
+            }
+         });
+      });
    });
