@@ -3,9 +3,9 @@ let host = window.location.host;
 //* Develop
 // let fetchPath = "http://" + host + "/general/js/scripts/sermons/sermons-data/pg-main-data.json";
 //* Github
-let fetchPath = "https://" + host + "/victory/general/js/scripts/sermons/sermons-data/pg-main-data.json";
+// let fetchPath = "https://" + host + "/victory/general/js/scripts/sermons/sermons-data/pg-main-data.json";
 
-fetch(fetchPath)
+fetch("https://lattiffio.github.io/victory/general/js/scripts/sermons/sermons-data/pg-main-data.json")
    .then((response) => {
       return response.json();
    })
